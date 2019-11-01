@@ -1,7 +1,8 @@
 Active911 Python Bindings
 ========================
 
-##Install
+## Install
+
 **via pip**
 
 pip install active911_python
@@ -12,7 +13,7 @@ download release and install by:
 
 **python setup.py install**
 
-##Setup / Initialize
+## Setup / Initialize
 
 **Import Package**
 
