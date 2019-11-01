@@ -62,3 +62,8 @@ Returns location point detail
 **get_resource_detail**
 
 Returns location point resource detail
+
+## TODOS:
+
+* Add POST request support for mapping locations.
+* Support locations_coordinate_window
