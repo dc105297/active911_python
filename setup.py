@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="active911_python",e
+    name="active911_python",
     version="0.0.1",
     author="David Chason",
     author_email="davidchason@gmail.com",
