@@ -5,7 +5,7 @@ Active911 Python Bindings
 
 **via pip**
 
-pip install active911_python
+pip install active911-python
 
 **Manual Installation**
 
