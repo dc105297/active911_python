@@ -63,6 +63,18 @@ Returns location point detail
 
 Returns location point resource detail
 
+## Important Notes:
+
+Full OAUTH scope is required for proper functionality.
+
+* read_agency	Allows read-only access to this agency's information (Name, Address etc).
+* read_alert	Allows read-only access to all alerts in the agency.
+* read_response	Allows read-only access to responses to all alerts in the agency.0
+* read_device	Allows read-only access to all device information in the agency.
+* read_mapdata	Allows read-only access to all locations and resources in the agency.
+* write_mapdata	Allows creation of locations and resources for the agency.
+
+
 ## TODOS:
 
 * Add POST request support for mapping locations.
