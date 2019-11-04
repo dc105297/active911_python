@@ -2,6 +2,7 @@
 import urllib3
 import json
 import datetime
+import os
 
 #Pool Manager for urllib3
 http = urllib3.PoolManager(cert_reqs = 'CERT_REQUIRED')
