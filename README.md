@@ -1,3 +1,5 @@
+[![Downloads](https://pepy.tech/badge/active911-python)](https://pepy.tech/project/active911-python)
+
 Active911 Python Bindings
 ========================
 
