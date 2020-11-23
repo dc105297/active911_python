@@ -19,7 +19,7 @@ Download release and install by:
 
 **Import Package**
 
-`from active911_python import active911`
+`from active911_python import active_911`
 
 **Initialize class**
 
