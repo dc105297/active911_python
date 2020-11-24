@@ -19,11 +19,11 @@ Download release and install by:
 
 **Import Package**
 
-`from active911_python import active_911`
+`import active_911`
 
 **Initialize class**
 
-`client = active_911.active911Client(access_token='Enter Access Token Here')`
+`client = active_911.Active911Client(access_token='Enter Access Token Here')`
 
 **Environment Variable Support**
 

@@ -7,7 +7,7 @@ import os
 #Pool Manager for urllib3
 http = urllib3.PoolManager(cert_reqs = 'CERT_REQUIRED')
 
-class active911Client(object):
+class Active911Client(object):
     """You can provide an active911 access token to the constructor or set a ACTIVE911_ACCESS_TOKEN enviroment variable."""
     BASE_URL = 'https://access.active911.com/interface/open_api/api/'
 
