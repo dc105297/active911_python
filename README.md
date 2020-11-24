@@ -1,5 +1,7 @@
 [![Downloads](https://pepy.tech/badge/active911-python)](https://pepy.tech/project/active911-python)
 
+[![Build Status](https://travis-ci.com/dc105297/active911_python.svg?branch=master)](https://travis-ci.com/dc105297/active911_python)
+
 Active911 Python Bindings
 ========================
 
