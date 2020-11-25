@@ -5,6 +5,7 @@
 Active911 Python Bindings
 ========================
 
+
 ## Install
 
 **via pip**
@@ -29,13 +30,18 @@ Download release and install by:
 
 ## Authentication
 
+
 **Environment Variable Support**
 
 If access_token is not passed you can set **ACTIVE911_ACCESS_TOKEN** as an environment variable.
 
-
-**Refresh Token Support**
 If refresh_token is not passed you can set **ACTIVE911_REFRESH_TOKEN** as an environment variable.
+
+#### Access Token Refresh Method:
+
+`access_token_refresh()`
+
+Adding the `access_token_refresh()` method before any other API call will automagically check if the access_token is expired, create a new access_token , and set it to the `ACTIVE911_ACCESS_TOKEN`Env.
 
 
 ## Available Methods:
