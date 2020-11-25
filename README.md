@@ -25,11 +25,18 @@ Download release and install by:
 
 **Initialize class**
 
-`client = active_911.Active911Client(access_token='Enter Access Token Here')`
+`client = active_911.Active911Client(access_token='Enter Access Token' refresh_token = 'Enter Refresh Token')`
+
+## Authentication
 
 **Environment Variable Support**
 
-If access_token is not passed you can set **ACTIVE911_ACCESS_TOKEN** as the environment variable.
+If access_token is not passed you can set **ACTIVE911_ACCESS_TOKEN** as an environment variable.
+
+
+**Refresh Token Support**
+If refresh_token is not passed you can set **ACTIVE911_REFRESH_TOKEN** as an environment variable.
+
 
 ## Available Methods:
 

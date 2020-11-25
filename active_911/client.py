@@ -11,14 +11,27 @@ class Active911Client(object):
     """You can provide an active911 access token to the constructor or set a ACTIVE911_ACCESS_TOKEN enviroment variable."""
     BASE_URL = 'https://access.active911.com/interface/open_api/api/'
 
-    def __init__(self, access_token=None):
+    def __init__(self, access_token=None, refresh_token=None):
         if not access_token:
             access_token = os.getenv('ACTIVE911_ACCESS_TOKEN')
         if not access_token:
             raise Exception("No access token has been passed or set.")
 
-        self.access_token = access_token
+        if not refresh_token:
+            refresh_token = os.getenv('ACTIVE911_REFRESH_TOKEN')
+        if not refresh_token:
+            raise Exception("No refresh token has been passed or set.")
 
+        self.access_token = access_token
+        self.refresh_token = refresh_token
+
+    def access_token_refresh(self):
+        """Optional function that can automate refreshing access token every 24 hours with the refresh token. Note: (Refresh Token Expires Yearly)"""
+        req = http.request('POST', 'https://console.active911.com/interface/dev/api_access.php', fields={'refresh_token': self.refresh_token})
+        response = json.loads(req.data.decode('utf-8'))
+        expiration = datetime.datetime.fromtimestamp(response['expiration'])
+        new_access_token = response['access_token']
+        os.environ['ACTIVE911_ACCESS_TOKEN'] = new_access_token
 
     def get_agency(self):
         """This will return the authorized agency also this is the root of the api."""
